@@ -1,4 +1,5 @@
 JqueryFileuploadTest::Application.routes.draw do
+  match '/upload_screenshot' => 'screenshots#upload_image', :method => :post
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
