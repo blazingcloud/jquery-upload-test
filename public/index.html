@@ -1,239 +1,110 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
-
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
-
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
-
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("images/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://stdlib.rubyonrails.org/">Ruby standard library</a></li>
-              <li><a href="http://corelib.rubyonrails.org/">Ruby core</a></li>
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
+<!DOCTYPE HTML>
+<!--
+/*
+ * jQuery File Upload Plugin HTML Example 5.0.3
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://creativecommons.org/licenses/MIT/
+ */
+-->
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<title>jQuery File Upload Example</title>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/base/jquery-ui.css" id="theme">
+<link rel="stylesheet" href="../jquery.fileupload-ui.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="fileupload">
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <div class="fileupload-buttonbar">
+            <label class="fileinput-button">
+                <span>Add files...</span>
+                <input type="file" name="files[]" multiple>
+            </label>
+            <button type="submit" class="start">Start upload</button>
+            <button type="reset" class="cancel">Cancel upload</button>
+            <button type="button" class="delete">Delete files</button>
         </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove or rename this file</h2>
-              <p>Routes are set up in config/routes.rb.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:migrate</code> to create your database. If you're not using SQLite (the default), edit <code>config/database.yml</code> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
+    </form>
+    <div class="fileupload-content">
+        <table class="files"></table>
+        <div class="fileupload-progressbar"></div>
     </div>
-  </body>
+</div>
+<script id="template-upload" type="text/x-jquery-tmpl">
+    <tr class="template-upload{{if error}} ui-state-error{{/if}}">
+        <td class="preview"></td>
+        <td class="name">${name}</td>
+        <td class="size">${sizef}</td>
+        {{if error}}
+            <td class="error" colspan="2">Error:
+                {{if error === 'maxFileSize'}}File is too big
+                {{else error === 'minFileSize'}}File is too small
+                {{else error === 'acceptFileTypes'}}Filetype not allowed
+                {{else error === 'maxNumberOfFiles'}}Max number of files exceeded
+                {{else}}${error}
+                {{/if}}
+            </td>
+        {{else}}
+            <td class="progress"><div></div></td>
+            <td class="start"><button>Start</button></td>
+        {{/if}}
+        <td class="cancel"><button>Cancel</button></td>
+    </tr>
+</script>
+<script id="template-download" type="text/x-jquery-tmpl">
+    <tr class="template-download{{if error}} ui-state-error{{/if}}">
+        {{if error}}
+            <td></td>
+            <td class="name">${name}</td>
+            <td class="size">${sizef}</td>
+            <td class="error" colspan="2">Error:
+                {{if error === 1}}File exceeds upload_max_filesize (php.ini directive)
+                {{else error === 2}}File exceeds MAX_FILE_SIZE (HTML form directive)
+                {{else error === 3}}File was only partially uploaded
+                {{else error === 4}}No File was uploaded
+                {{else error === 5}}Missing a temporary folder
+                {{else error === 6}}Failed to write file to disk
+                {{else error === 7}}File upload stopped by extension
+                {{else error === 'maxFileSize'}}File is too big
+                {{else error === 'minFileSize'}}File is too small
+                {{else error === 'acceptFileTypes'}}Filetype not allowed
+                {{else error === 'maxNumberOfFiles'}}Max number of files exceeded
+                {{else error === 'uploadedBytes'}}Uploaded bytes exceed file size
+                {{else error === 'emptyResult'}}Empty file upload result
+                {{else}}${error}
+                {{/if}}
+            </td>
+        {{else}}
+            <td class="preview">
+                {{if thumbnail_url}}
+                    <a href="${url}" rel="gallery"><img src="${thumbnail_url}"></a>
+                {{/if}}
+            </td>
+            <td class="name">
+                <a href="${url}"{{if thumbnail_url}} rel="gallery"{{/if}}>${name}</a>
+            </td>
+            <td class="size">${sizef}</td>
+            <td colspan="2"></td>
+        {{/if}}
+        <td class="delete">
+            <button data-type="${delete_type}" data-url="${delete_url}">Delete</button>
+        </td>
+    </tr>
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script src="../jquery.iframe-transport.js"></script>
+<script src="../jquery.fileupload.js"></script>
+<script src="../jquery.image-gallery.js"></script>
+<script src="../jquery.fileupload-ui.js"></script>
+<script src="application.js"></script>
+</body> 
 </html>
